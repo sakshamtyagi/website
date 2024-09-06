@@ -1,0 +1,148 @@
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  height: 130px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100px;
+  margin-bottom: 1px;
+}
+.youtube-icon {
+  display: flex;
+  justify-content: end;
+  color: red;
+  background-color: #000;
+  font-size: 40px;
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+
+.youtube-icon a {
+  color: red;
+  background-color: transparent;
+}
+
+nav {
+  padding-top: 15px;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+ 
+}
+
+#navMenu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  
+}
+
+#navMenu li {
+  margin-right: 20px;
+}
+
+#navMenu li a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#navMenu li a:hover {
+  color: #0ff;
+  font-size: 1.25rem; }
+  footer {
+    background-color: #000;
+    color: gray;
+    padding: 10px 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-container {
+    max-width: 100%;
+    padding: 0 20px;
+    background-color: black;
+    margin: auto;
+    padding: auto;
+    padding-bottom: 10px;
+}
+.footer-title h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 17, 17);
+    text-align: start;
+    margin-left: 30px;
+}
+
+.footer-container p {
+    color: #cccccc;
+    text-align: center;
+    font-size: 14px;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.footer-links a {
+    color: gray;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-social {
+    color: gray;
+} 
+
+.footer-social div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.footer-social a {
+    color: aqua;
+    background-color: transparent;
+    margin: 5px;
+    font-size: 25px;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #ccc;
+    text-align: center; 
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Distribution Blueprint</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        
+        }
+
+.hero {
+            text-align: center;
+            height: 1000px;
+            background: linear-gradient(to right, #1c28d2, #2ecce8);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+
+        .video-carousel {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+            height: auto;
+        }
+
+        .video-carousel .videos {
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .video-carousel .video-item {
+            flex: 0 0 auto;
+            width: 400px;
+            height: 220px;
+            background: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .video-carousel .video-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-controls button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        
+   /* Mobile styles */
+
+
+@media (max-width: 320px) 
+{
+    
+    .hero {
+        height: 330px;
+    }
+    .hero h1 {
+        margin-top: -1px;
+        font-size: 25px;
+
+    }
+    .hero p {
+        font-size: 10px;
+
+    }
+              
+    .video-carousel .video-item {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 120px;
+            background: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    
+    
+    
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="window.location.href='index.html';">
+            <img src="logosaksham.png" alt="Logo">
+        </div>
+        <div class="youtube-icon">
+            <span class="color"><a href="https://www.youtube.com/sakshamtyagi"><i class="fab fa-youtube"></i></a>
+            </div></span>
+            <hr>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="book.html">E-Book</a></li>
+                <li><a href="program.html">Program List</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero"><br>
+        <h1>Complete Distribution</h1>
+        <p>Empowering Artists with Innovative Solutions</p>
+    </section>
+    
+    <section class="video-carousel">
+        <div class="videos">
+            <div class="video-item" data-video-id="Bn4IMGt68eM"><img src="" alt="Video 1"></div>
+            <div class="video-item" data-video-id="j1EXIv04UIY"><img src="video2.jpg" alt="Video 2"></div>
+            <div class="video-item" data-video-id="L_jcT8yoZ-w"><img src="video3.jpg" alt="Video 3"></div>
+            <div class="video-item" data-video-id="dQw4w9WgXcQ"><img src="video1.jpg" alt="Video 1"></div>
+            <div class="video-item" data-video-id="3JZ_D3ELwOQ"><img src="video2.jpg" alt="Video 2"></div>
+            <div class="video-item" data-video-id="L_jcT8yoZ-w"><img src="video3.jpg" alt="Video 3"></div>
+            <div class="video-item" data-video-id="dQw4w9WgXcQ"><img src="video1.jpg" alt="Video 1"></div>
+            <div class="video-item" data-video-id="3JZ_D3ELwOQ"><img src="video2.jpg" alt="Video 2"></div>
+            <div class="video-item" data-video-id="L_jcT8yoZ-w"><img src="video3.jpg" alt="Video 3"></div>
+            <div class="video-item" data-video-id="dQw4w9WgXcQ"><img src="video1.jpg" alt="Video 1"></div>
+            <div class="video-item" data-video-id="3JZ_D3ELwOQ"><img src="video2.jpg" alt="Video 2"></div>
+            <div class="video-item" data-video-id="L_jcT8yoZ-w"><img src="video3.jpg" alt="Video 3"></div>
+            <div class="video-item" data-video-id="dQw4w9WgXcQ"><img src="video1.jpg" alt="Video 1"></div>
+            <div class="video-item" data-video-id="3JZ_D3ELwOQ"><img src="video2.jpg" alt="Video 2"></div>
+            <div class="video-item" data-video-id="L_jcT8yoZ-w"><img src="video3.jpg" alt="Video 3"></div>
+            <div class="video-item" data-video-id="dQw4w9WgXcQ"><img src="video1.jpg" alt="Video 1"></div>
+            <div class="video-item" data-video-id="3JZ_D3ELwOQ"><img src="video2.jpg" alt="Video 2"></div>
+            <div class="video-item" data-video-id="L_jcT8yoZ-w"><img src="video3.jpg" alt="Video 3"></div>
+
+            <!-- Add more video items with correct data-video-id -->
+        </div>
+        <div class="carousel-controls">
+            <button class="scroll-left">&#10094;</button>
+            <button class="scroll-right">&#10095;</button>
+        </div>
+    </section>
+    
+    <section class="">
+        
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-title">
+                <h4>Quick Links</h4>
+            </div>
+            <div class="footer-links">
+                <div class="left">
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="work.html">Work with Us</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="feedback">Feedback</a>
+                </div>
+                <div class="center">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="mission.html">Our Mission</a>
+                    <a href="contact">Upcoming Projects</a>
+                    <a href="mission">Our Mission</a>
+                </div>
+                <div class="right">
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="terms">Terms of Service</a>
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="terms">Terms of Service</a>
+                </div>
+                <div class="footer-social"><br><h5>Connect on Social Media</h5>
+                    <div> <a href="https://www.facebook.com/officialsakshamtyagi" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/officialsakshamtyagi" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/iamsakshamtyagi" target="_blank"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/in/iamsakshamtyagi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/sakshamtyagi" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div></div>
+            <p>&copy; 2024 The Distribution Blueprint. All rights reserved.</p></div>
+    </footer>
+
+    <script>
+        // Function to scroll left
+        function scrollLeft() {
+            const videos = document.querySelector('.video-carousel .videos');
+            videos.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+
+        // Function to scroll right
+        function scrollRight() {
+            const videos = document.querySelector('.video-carousel .videos');
+            videos.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+
+        // Event listeners for scroll buttons
+        document.querySelector('.scroll-left').addEventListener('click', scrollLeft);
+        document.querySelector('.scroll-right').addEventListener('click', scrollRight);
+
+        // Function to play video in fullscreen
+        function playVideo(videoId) {
+            const url = `https://www.youtube.com/embed/${videoId}?autoplay=1&fs=1`;
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.style.position = 'fixed';
+            iframe.style.top = '27%';
+            iframe.style.left = '27%';
+            iframe.style.width = '50vw';
+            iframe.style.height = '50vh';
+            iframe.style.border = 'none';
+            iframe.style.zIndex = 1000;
+            iframe.setAttribute('allowfullscreen', '');
+
+            // Close video on click
+            iframe.addEventListener('click', function() {
+                iframe.remove();
+            });
+
+            document.body.appendChild(iframe);
+        }
+
+        // Add event listeners to video items
+        document.querySelectorAll('.video-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const videoId = this.getAttribute('data-video-id');
+                playVideo(videoId);
+            });
+        });
+
+        // Event listener for menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            var navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

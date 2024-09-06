@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Distribution Blueprint</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            text-align: center;
+            height: 1000px;
+            background: linear-gradient(to right, #1c28d2, #2ecce8);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .program-list {
+            padding: 20px;
+        }
+        .program-item {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .program-item h3 {
+            margin-bottom: 10px;
+        }
+        .program-item p {
+            margin: 5px 0;
+        }
+        .program-item .date {
+            color: #888;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="window.location.href='index.html';">
+            <img src="logosaksham.png" alt="Logo">
+        </div>
+        <div class="youtube-icon">
+            <span class="color"><a href="https://www.youtube.com/sakshamtyagi"><i class="fab fa-youtube"></i></a>
+            </div></span>
+            <hr>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="book.html">E-Book</a></li>
+                <li><a href="program.html">Program List</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero"><br>
+        <h1>Unlock Your Music <br>Distribution Potential</h1>
+        <p>Empowering Artists with Innovative Solutions</p>
+    </section>
+    <section class="program-list">
+        <div class="program-item">
+            <h3>Program Name 1</h3>
+            <p>Details about the program.</p>
+            <p class="date">Date: 01/01/2024</p>
+        </div>
+        <div class="program-item">
+            <h3>Program Name 2</h3>
+            <p>Details about the program.</p>
+            <p class="date">Date: 15/02/2024</p>
+        </div>
+        <!-- Add more program items as needed -->
+    </section>
+    
+    <section class="">
+        
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-title">
+                <h4>Quick Links</h4>
+            </div>
+            <div class="footer-links">
+                <div class="left">
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="work.html">Work with Us</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="feedback">Feedback</a>
+                </div>
+                <div class="center">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="mission.html">Our Mission</a>
+                    <a href="contact">Upcoming Projects</a>
+                    <a href="mission">Our Mission</a>
+                </div>
+                <div class="right">
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="terms">Terms of Service</a>
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="terms">Terms of Service</a>
+                </div>
+                <div class="footer-social"><br><h5>Connect on Social Media</h5>
+                    <div> <a href="https://www.facebook.com/officialsakshamtyagi" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/officialsakshamtyagi" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/iamsakshamtyagi" target="_blank"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/in/iamsakshamtyagi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/sakshamtyagi" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div></div>
+            <p>&copy; 2024 The Distribution Blueprint. All rights reserved.</p></div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            var navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
