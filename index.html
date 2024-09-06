@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Distribution Blueprint - India's 1st comprehensive music distribution course. Empowering independent artists with video lectures, a chapter-wise book, and practical strategies.">
+    <meta name="keywords" content="Music Distribution, The Distribution Blueprint, Independent Artists, Music Career, Saksham Tyagi, Video Lectures, Music Course, music distribution services, music distribution india, music distribution free, best music distribution, music distribution course online, music distribution course free, Music Education">
+    <meta name="author" content="Saksham Tyagi">
+    <title>The Distribution Blueprint</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        
+        }
+
+        header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  height: 130px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100px;
+  margin-bottom: 1px;
+}
+.youtube-icon {
+  display: flex;
+  justify-content: end;
+  color: red;
+  background-color: #000;
+  font-size: 40px;
+  margin-top: -60px;
+  margin-bottom: 10px;
+}
+
+.youtube-icon a {
+  color: red;
+  background-color: transparent;
+}
+
+nav {
+  padding-top: 15px;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+ 
+}
+
+#navMenu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  
+}
+
+#navMenu li {
+  margin-right: 20px;
+}
+
+#navMenu li a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+#navMenu li a:hover {
+  color: #0ff;
+  font-size: 1.25rem; }
+
+        .hero {
+            text-align: center;
+            height: 1000px;
+            background: linear-gradient(to right, #1c28d2, #2ecce8);
+            color: #fff;
+            position: relative; 
+            overflow: hidden;
+        }
+        .text-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    white-space: nowrap;
+    position: relative;
+    animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .hero img {
+            position: absolute;
+            bottom: 80px;
+            width: 40%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .rotate {
+            animation: rotateClockwise 10s linear infinite;
+            border-radius: 100%;
+            width:20%;
+            right: 47%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        @keyframes rotateClockwise {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        .hero img.front {
+            width: 50%;
+            right: 10%;
+            z-index: 2;
+            bottom: 50px;
+        }
+        .course {
+            text-align: center;
+            width: 100%;
+            background-color: #000;
+            color: white;
+        }
+        .image-wrap {
+      float: left; /* Or right, depending on desired placement */
+      margin: 10px 25px 25px 10px; /* Adjust margins as needed */
+      max-width: 40%; /* Adjust image size */
+      box-shadow: 0 1px 30px rgba(25, 255, 255, 0.5);
+    }
+        .course h1{
+            background-color: #000;
+            text-align: center;
+            color: aqua;
+            font-size: 4rem;
+            margin-top: 10px;
+        }
+        .course h2 {
+            width: 35%;
+            background-color: #0004ff;
+            text-align: center;
+            margin-left: 32%;
+            border-radius: 5%;
+            color: rgb(203, 250, 94);
+        }
+        .custom-font {
+            font-size: 20px;
+        }
+        .course p {
+            text-align: left;
+            width: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: transparent;
+        }
+        .course-title {
+            font-size: 2rem;
+        }
+        .course-heading {
+            font-size: 20px;
+        }
+        .course-by {
+            font-size: 25px;
+        }
+        .offerings {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .offerings h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: rgb(11, 88, 204);
+            color: white;
+            width: 30%;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 1.25rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+        button {
+            background-color: transparent;
+            color: rgb(255, 251, 0);
+            padding: 5px 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            box-shadow: 0 5px 2px black;
+            text-decoration: dotted;
+        }
+        .product p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .product .price {
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .product .new-arrival {
+            background-color: red;
+            color: #fff;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 0.99rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+.channel-stats {
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(41, 41, 51);
+}
+.channel-stats h2 {
+    margin-bottom: 30px;
+}
+        .numbers {
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    height: 200px;
+    background-color: black;
+   
+}
+.stat-box {
+    margin-left: 13.5%;
+    margin-top: 4%;
+}
+.stat-box h3 {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+}
+
+.stat-box p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    color: yellow;
+}
+
+        .reviews {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.reviews h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: aqua;
+}
+
+.review {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 13px;
+    font-style: italic;
+    width: 28%; /* Slightly smaller width */
+    display: inline-block;
+}
+
+footer {
+    background-color: #000;
+    color: gray;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-title h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 17, 17);
+    text-align: start;
+    margin-left: 30px;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.footer-links a {
+    color: gray;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-social {
+    color: gray;
+} 
+
+.footer-social div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.footer-social a {
+    color: aqua;
+    background-color: transparent;
+    margin: 5px;
+    font-size: 25px;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #ccc;
+    text-align: center;
+}
+
+ /* Mobile styles */
+       
+ @media (max-width: 768px) {
+    .hero {
+        height: 700px;
+    }
+    .hero h1 {
+        margin-top: 1px;
+        font-size: 55px;
+
+    }
+    .hero p {
+        font-size: 25px;
+
+    }
+    .hero img {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .hero img.rotate {
+        width: 310px;
+    }
+    .course h1{
+        font-size: 55px; 
+    }
+
+    .course h2{
+        font-size: 22px;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        
+    }
+
+.text-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-text {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    white-space: nowrap;
+    position: relative;
+    animation: moveText 10s linear infinite;
+    
+}
+    .image-wrap {
+        max-width: 50%;
+        float: left;
+        margin: 10px 25px 25px 10px;
+    }
+    .course p {
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+        text-align: left;
+        margin-left: 40px;
+    }
+    .custom-font {
+        font-size: 18px;
+        text-align: justify;
+    }
+    .course-title {
+            font-size: 21px;
+            
+        }
+        .course-heading {
+            font-size: 17px;
+        }
+        .course-by {
+            font-size: 20px;
+        }
+              
+        .offerings {
+            background-color: #000;
+            color: #fff;
+            padding: auto;
+            text-align: center;
+        }
+
+        .offerings h2 {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        }
+
+        
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        button {
+            font-size: 10px;
+        }
+        .product .new-arrival {
+            background-color: red;
+            color: #fff;
+            padding: 5px 10px;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            font-size: 0.69rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .channel-stats {
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(41, 41, 51);
+    padding-bottom: 50px;
+}
+.channel-stats h2 {
+    margin-bottom: 30px;
+}
+    .numbers {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 150px 300px;
+        margin-left: -60px;
+    }
+
+    .stat-box p {
+        font-size: 20px;
+    }
+            .reviews h2 {
+        font-size: 30px;
+    }
+
+    .review {
+        width: 90%; /* Smaller width on tablet-sized screens */
+        font-size: 12px;
+    }}
+
+
+@media (max-width: 320px) 
+{
+    #navMenu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #000;
+                width: 100%;
+                padding: 10px 20px;
+            }
+
+            #navMenu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            #navMenu li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .logo img{
+        width: 90px;
+        margin-left: -20px;
+    }
+    .youtube-icon {
+        font-size: 30px;
+        padding-top: 12px;
+    }
+    .hero {
+        height: 330px;
+    }
+    .hero h1 {
+        margin-top: -1px;
+        font-size: 25px;
+
+    }
+    .hero p {
+        font-size: 10px;
+
+    }
+    .hero img {
+        margin-bottom: -20px;
+        margin-right: 15px;
+    }
+    .hero img.rotate {
+        width: 110px;
+    }
+    .course h1{
+        font-size: 23px;
+    }
+    .course h2{
+        font-size: 12px;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-bottom: -10px;
+    }
+
+.course {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: auto;
+}
+
+.animated-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    white-space: nowrap;
+    position: relative;
+    animation: moveText 10s linear infinite;
+    
+}
+    .image-wrap {
+        max-width: 80%;
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        
+    }
+    .course p {
+        font-size: 10px;
+        text-align: center;
+        margin-top: -20px;
+        width: 90%;
+        margin-left: auto;
+    }
+    .custom-font {
+        font-size: 12px;
+        text-align: center;
+    }
+    .course-title {
+            font-size: 18px;
+            
+        }
+        .course-heading {
+            font-size: 15px;
+        }
+        .course-by {
+            font-size: 15px;
+        }
+              
+        .offerings {
+            background-color: #000;
+            color: #fff;
+            padding: auto;
+            text-align: center;
+        }
+
+        .offerings h2 {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: rgb(11, 88, 204);
+            color: white;
+            width: 90%;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        button {
+            font-size: 10px;
+        }
+        .product .new-arrival {
+            background-color: red;
+            color: #fff;
+            padding: 5px 10px;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            font-size: 0.69rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .channel-stats {
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(41, 41, 51);
+    padding-bottom: 50px;
+}
+.channel-stats h2 {
+    margin-bottom: 30px;
+}
+        .numbers {
+         padding: 100px;   
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Centers the stat-box horizontally within the numbers container */
+    
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column; /* Ensures that h3 and p are stacked vertically */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers the text inside */
+    
+}
+
+.stat-box h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0; /* Remove extra margin */
+    
+}
+
+.stat-box p {
+    margin: 10px 0 0; /* Margin from the top for spacing */
+    font-size: 15px;
+    color: yellow;
+}
+
+
+    .reviews h2 {
+        font-size: 20px; /* Smaller heading */
+    }
+
+    .review {
+        width: 90%; /* Almost full width on mobile */
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links div {
+        margin: 5px 0;
+    }
+.footer-container p {
+    font-size: 10px;
+}
+    .footer-title h4 {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-social div {
+        flex-direction: row;
+    }
+
+    .footer-social a {
+        font-size: 20px;
+        margin: 10px 0;
+        padding: 0 5px;
+        margin-left: 2px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="window.location.href='index.html';">
+            <img src="logosaksham.png" alt="Logo">
+        </div>
+        <div class="youtube-icon">
+            <span class="color"><a href="https://www.youtube.com/sakshamtyagi"><i class="fab fa-youtube"></i></a>
+            </div></span>
+            <hr>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="book.html">E-Book</a></li>
+                <li><a href="program.html">Program List</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="more.html">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero"><br>
+        <h1>Unlock Your Music <br>Distribution Potential</h1>
+        <p>Empowering Artists with Innovative Solutions</p>
+        <img src="backimage.jpeg" alt="Foreground Image" class="front">
+        <img src="frontimage.jpg" alt="background Image" class="rotate">
+    </section>
+<section class="course"><br>
+    <h1>The Distribution Blueprint</h1><br>
+    <h2>India's 1<sup>st</sup> Music Distribution Cousre</h2><br><br><div class="text-container"><h3 class="animated-text">FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE &nbsp;&nbsp;&nbsp;&nbsp;FREE</h3></div><br><br>
+    <p>
+
+        <span class="custom-font">This pioneering course provides comprehensive knowledge of music distribution through a structured and sequential series of topics and chapters. "The Distribution Blueprint" empowers independent artists and aspiring distributors with in-depth insights and practical strategies.</span> <br><br>
+        <img src="Course_adstemplate.jpg" alt="Course offers image" class="image-wrap"><br>
+        
+        <b><span class="course-title">WHAT THIS COURSE OFFERS:</span></b><br><br><br>
+        
+        <span class="course-heading"><b>1. Curriculum Development -</b></span> <br><br>
+        
+        Designed to cover all aspects of music distribution, from the basics to advanced techniques. <br><br>
+        
+        <span class="course-heading"><b>2. Content Creation -</b></span> <br><br>
+        
+        Engaging and informative high-quality video lectures that make complex concepts easy to understand. <br><br>
+        
+        <span class="course-heading"><b>3. Authorship -</b></span> <br><br>
+        
+        A detailed chapter-wise book accompanying the video lectures, serving as a valuable reference guide. <br><br>
+        
+        <span class="course-heading"><b>4. Community Building -</b> </span><br><br>
+        
+        Engagement with a growing community of YouTube subscribers, offering continuous support and updates on the latest industry trends. <br><br>
+        
+        <span class="course-heading"><b>5. Empowerment -</b> </span><br><br>
+        
+        Providing tools, resources, and knowledge that enable independent artists to take control of their music careers and achieve greater success. <br><br>
+        
+        Through this course, He is committed to democratizing music distribution education and fostering a community of informed, empowered artists and distributors. <br>
+        
+        Expand your knowledge and navigate the complex world of music distribution with this exclusive course. <br><br><br>
+        
+        <span class="course-by">Course is created by <span style="color: #0ff;"><b>Saksham Tyagi.</b> </span></span><br><br></p>
+</section>
+
+    <section class="offerings">
+        <h2>Our Offerings</h2>
+        <div class="product-container">
+            <div class="product">
+                <a href="videos.html" target="_blank">
+                <img src="videos.jpeg" alt="The Distribution Blueprint (E-book)"></a>
+                <h3>Video Lectures</h3>
+                <button type="button" onclick="window.location.href='videos.html'">Read More ➡️</button>
+                <!-- <p>₹599.00</p> -->
+                <!-- <div class="price">₹399.00</div> -->
+            </div>
+            <div class="product">
+                <a href="book.html" target="_blank">
+                <img src="ebooks.jpeg" alt="Music Distribution 101"></a>
+                <h3>Course (E-book)</h3>
+                <button type="button" onclick="window.location.href='book.html'">Read More ➡️</button>
+                <!-- <div class="price">₹150.00</div> -->
+            </div>
+            <div class="product">
+                <a href="our_distribution.html" target="_blank">
+                <span class="new-arrival">Coming soon..</span>
+                <img src="our_distribution.jpeg" alt="Advanced Distribution Strategies"></a>
+                <h3>Our Music Distribution</h3>
+                <button type="button" onclick="window.location.href='our_distribution.html'">Read More ➡️</button>
+                <!-- <div class="price">₹200.00</div> -->
+            </div>
+    </section>
+    <section class="channel-stats"><h2>Channel Stats</h2>
+        <section class="numbers">
+            <div class="stat-box">
+                <h3>Subscribers</h3>
+                <p>35,000+</p>
+            </div>
+            <div class="stat-box">
+                <h3>Videos</h3>
+                <p>250+</p>
+            </div>
+            <div class="stat-box">
+                <h3>Total Views</h3>
+                <p>7,000,000+</p>
+            </div>
+    </section>
+    </section>
+
+    
+<section>
+    <div class="reviews">
+        <h2>Customer Reviews</h2><br>
+        <div class="review">
+            <p>"The Distribution Blueprint is a must-have for indie artists. It breaks down complex music distribution concepts into easy-to-understand lessons. The course’s mix of video tutorials and a comprehensive book provides everything you need to take control of your music's journey."<br><br><b>- Mayank Kumar</b></p>
+        </div>
+        <div class="review">
+            <p>"After exploring various music courses, The Distribution Blueprint truly stands out. It simplifies the entire distribution process with practical steps and clear guidance. The inclusion of real-world examples and a well-structured book makes this an essential resource for anyone in the music industry."<br><br><b>- Sujal Sharma</b> </p>
+        </div>
+        <div class="review">
+            <p>"As an independent artist, This course was exactly what I needed. The course offers practical, actionable advice that can be applied immediately. The blend of insightful video content and a detailed, easy-to-follow book makes it an indispensable guide for those serious about their music career."<br><br><b> - Neha Mehta</b></p>
+        </div>
+    </div>
+
+</section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-title">
+                <h4>Quick Links</h4>
+            </div>
+            <div class="footer-links">
+                <div class="left">
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="work.html">Work with Us</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="feedback">Feedback</a>
+                </div>
+                <div class="center">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="mission.html">Our Mission</a>
+                    <a href="contact">Upcoming Projects</a>
+                    <a href="mission">Our Mission</a>
+                </div>
+                <div class="right">
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="terms">Terms of Service</a>
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="terms">Terms of Service</a>
+                </div>
+                <div class="footer-social"><br><h5>Connect on Social Media</h5>
+                    <div> <a href="https://www.facebook.com/officialsakshamtyagi" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/officialsakshamtyagi" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/iamsakshamtyagi" target="_blank"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/in/iamsakshamtyagi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/sakshamtyagi" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div></div>
+            <p>&copy; 2024 The Distribution Blueprint. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            var navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
